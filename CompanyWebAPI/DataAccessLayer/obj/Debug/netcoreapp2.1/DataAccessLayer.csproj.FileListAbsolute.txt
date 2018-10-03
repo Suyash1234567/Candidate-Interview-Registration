@@ -1,0 +1,21 @@
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.deps.json
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.runtimeconfig.json
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\yashb\source\repos\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.deps.json
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.runtimeconfig.json
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.pdb

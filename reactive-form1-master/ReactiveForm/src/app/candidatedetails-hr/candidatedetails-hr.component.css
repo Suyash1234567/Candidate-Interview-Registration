@@ -1,0 +1,11 @@
+.table-bordered{
+    width: 70%;
+    margin: 5% 10% 0% 17%;
+}
+th,td{
+    padding: 10px;
+}
+.header{
+    text-align: center;
+    margin-top: 5%;
+}

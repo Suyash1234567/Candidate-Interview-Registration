@@ -1,0 +1,17 @@
+<div class="card" style="width: 30rem;">
+  <span class="card-img-top">Login</span>
+  <div class="card-body">
+    <form (ngSubmit)="submit()">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" [(ngModel)]="user" placeholder="Enter Username" name="userName" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <span *ngIf="!isValidUser" style="font-size: 15px; color:red">{{message}}</span>
+      </div>
+    </form>
+  </div>
+</div>

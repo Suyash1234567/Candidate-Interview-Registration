@@ -1,0 +1,14 @@
+<div class="header">
+    <img class="img-responsive" style="cursor: pointer;" (click)="router()" src="src/assets/logo.png">
+  <!-- <a class="logo">KelltonTech</a> -->
+  <div class="header-right">
+      <span *ngIf="isValid" class="btn btn-dark">{{userData.employeeName}}</span>&nbsp;
+      <span *ngIf="isValid" class="btn btn-dark" >{{userData.employeeRole}}</span>&nbsp;
+    <button class="btn btn-primary" *ngIf="!isValid">
+      <i class="fa fa-sign-in" (click)="Redirect()" aria-hidden="true"> Login</i>
+    </button>
+    <button class="btn btn-primary" *ngIf="isValid">
+      <i class="fa fa-sign-out" (click)="logout()" aria-hidden="true"> Logout</i>
+    </button>
+  </div>
+</div>

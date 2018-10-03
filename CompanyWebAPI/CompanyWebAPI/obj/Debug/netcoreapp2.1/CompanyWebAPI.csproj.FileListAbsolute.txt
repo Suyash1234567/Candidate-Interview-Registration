@@ -1,0 +1,50 @@
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.deps.json
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.runtimeconfig.json
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.runtimeconfig.dev.json
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.dll
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.csprojAssemblyReference.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorAssemblyInfo.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorAssemblyInfo.cs
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.AssemblyInfoInputs.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.AssemblyInfo.cs
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.pdb
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.dll
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.pdb
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.csproj.CopyComplete
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.Views.dll
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.Views.pdb
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.TagHelpers.input.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.TagHelpers.output.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorCoreGenerate.cache
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorTargetAssemblyInfo.cs
+C:\Users\yashb\source\repos\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.Views.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.deps.json
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.runtimeconfig.json
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.runtimeconfig.dev.json
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.dll
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.Views.dll
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\CompanyWebAPI.Views.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.csprojAssemblyReference.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorAssemblyInfo.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorAssemblyInfo.cs
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.AssemblyInfoInputs.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.AssemblyInfo.cs
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.TagHelpers.input.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.TagHelpers.output.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorCoreGenerate.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.RazorTargetAssemblyInfo.cs
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.Views.pdb
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.csproj.CopyComplete
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.dll
+C:\Users\Suyash Mehrotra\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\Downloads\updated\CompanyWebAPI\CompanyWebAPI\obj\Debug\netcoreapp2.1\CompanyWebAPI.pdb

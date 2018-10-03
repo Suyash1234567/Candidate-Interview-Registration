@@ -1,0 +1,50 @@
+
+<!-- <h2 class="header">Table</h2>
+<form [formGroup]="finalForm" (ngSubmit)="onEdit()"> -->
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Name</td>
+      <td>{{data.candidateName}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Email</td>
+      <td>{{data.candidateEmail}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Address</td>
+      <td>{{data.candidateAddress}}</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Highest Qualification</td>
+      <td>{{data.candidateHighestQualification}}</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Date Of Birth</td>
+      <td>{{data.candidateDateOfBirth}}</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Contact Number</td>
+      <td>{{data.candidateContactNo}}</td>
+    </tr>
+    <!-- <div class="form-group"> -->
+      <hr><hr>
+    <div>
+      <button class="btn btn-primary" (click)="redirect()">Edit</button> &nbsp;&nbsp;
+      <button class="btn btn-primary" (click)="register()">Save</button>
+  </div>
+  </tbody>
+</table>
