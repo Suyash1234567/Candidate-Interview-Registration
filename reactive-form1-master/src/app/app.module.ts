@@ -16,6 +16,8 @@ import { CandidateDetailsComponent } from './candidate-details/candidate-details
 import { CandidatedetailsHRComponent } from './candidatedetails-hr/candidatedetails-hr.component';
 import { ToastrModule,  } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap';
+
 
 @NgModule({
     imports: [
@@ -25,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         FormsModule,
         HttpClientModule,
         ToastrModule.forRoot(),
+        BsDatepickerModule.forRoot(),
         BrowserAnimationsModule
     ],
     declarations: [

@@ -1,61 +1,91 @@
 <!-- <h2 class="header">Table</h2>
 <form [formGroup]="finalForm" (ngSubmit)="onEdit()"> -->
-<table class="table-bordered">
+<table class="table	table-bordered	table-hover">
   <thead>
     <tr>
-      <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
       <td>Name</td>
       <td>{{candidate.candidateName}}</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
       <td>Email</td>
       <td>{{candidate.candidateEmail}}</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
       <td>Address</td>
       <td>{{candidate.candidateAddress}}</td>
     </tr>
     <tr>
-      <th scope="row">4</th>
       <td>Highest Qualification</td>
       <td>{{candidate.candidateHighestQualification}}</td>
     </tr>
     <tr>
-      <th scope="row">5</th>
       <td>Date Of Birth</td>
       <td>{{candidate.candidateDateOfBirth}}</td>
     </tr>
     <tr>
-      <th scope="row">6</th>
       <td>Contact Number</td>
       <td>{{candidate.candidateContactNo}}</td>
     </tr>
     <tr>
-        <th scope="row">7</th>
-        <td>Total Marks</td>
-        <td>
-            <input type="text" id="marks" [attr.disabled]="!isIT ? '' : null" size="90" value="100" placeholder="Marks">
-        </td>
-      </tr>
-      <tr>
-          <th scope="row">8</th>
-          <td>Comments</td>
-          <td >
-              <input type="text" size="90" [attr.disabled]="isIT ? '' : null" placeholder="Add comments on the basis of performance">
-          </td>
-        </tr>
-        <br>
-        <div>
-            <button class="btn btn-primary" (click)="Submit()">Submit</button>
-        </div>
+      <td>Skills</td>
+      <td>
+        <select disabled>
+          <option value="1" selected>DotNet</option>
+        </select>&nbsp;&nbsp;
+        <select disabled>
+          <option value="2" selected>Angular</option>
+        </select>&nbsp;&nbsp;
+        <select disabled>
+          <option value="3" selected>Java</option>
+        </select>&nbsp;&nbsp;
+        <select disabled>
+          <option value="4" selected>React</option>
+        </select>&nbsp;&nbsp;
+        <select disabled>
+          <option value="5" selected>Block Chain</option>
+        </select>&nbsp;&nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>Marks</td>
+      <td>
+        <input class="marks" [attr.disabled]="!isIT ? '' : null" name="dotNetMarks" [(ngModel)]="dotNetMarks" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number" maxlength="3" max="100" min="0">&nbsp;&nbsp;
+        <input class="marks" [attr.disabled]="!isIT ? '' : null" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number" maxlength="3" name="angularMarks" [(ngModel)]="angularMarks" pattern="\d*" maxlength="3" max="100"
+          min="0">&nbsp;&nbsp;
+        <input class="marks" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number" maxlength="3" [attr.disabled]="!isIT ? '' : null" type="number" name="javaMarks" [(ngModel)]="javaMarks"
+          pattern="\d*" maxlength="3" max="100" min="0">&nbsp;&nbsp;
+        <input class="marks" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number" maxlength="3" [attr.disabled]="!isIT ? '' : null" type="number" name="reactMarks" [(ngModel)]="reactMarks"
+          pattern="\d*" maxlength="3" max="100" min="0">&nbsp;&nbsp;
+        <input class="marks" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number" maxlength="3" [attr.disabled]="!isIT ? '' : null" type="number" name="blockChainMarks"
+          [(ngModel)]="blockChainMarks" pattern="\d*" maxlength="3" max="100" min="0">&nbsp;&nbsp;
+      </td>
+      <!-- <input name="somename"
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number"
+    maxlength = "6" /> -->
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>
+        <input type="text" size="90" [attr.disabled]="isIT ? '' : null" [(ngModel)]="Comments" maxlength="100"
+          placeholder="Add comments on the basis of performance">
+      </td>
+    </tr>
+    <br>
+    <div>
+      <button class="btn btn-primary" (click)="Submit()">Submit</button>
+      <!-- <a href="{{testFilePath}}" target="_blank">Candiadet Details</a> -->
+    </div>
   </tbody>
 </table>

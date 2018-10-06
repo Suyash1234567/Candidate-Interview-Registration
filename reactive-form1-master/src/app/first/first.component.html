@@ -6,7 +6,7 @@
                 <div class="form-group">
                     <label for="candidateName">Name</label>
                     <input type="text" id="candidateName" formControlName="candidateName" class="form-control"
-                        [ngClass]="{ 'is-invalid': submitted && f.candidateName.errors }" />
+                        [ngClass]="{ 'is-invalid': submitted && f.candidateName.errors }" maxlength="30" />
                     <div class="error-text" *ngIf="(f.candidateName.value.length !=0 && f.candidateName.errors)">Name
                         is required (must be characters only)</div>
                     <!-- <div *ngIf="submitted && f.candidateName.errors" class="invalid-feedback">
@@ -16,7 +16,7 @@
                 </div>
                 <div class="form-group">
                     <label for="candidateEmail">Email</label>
-                    <input type="email" id="candidateEmail" formControlName="candidateEmail" class="form-control"
+                    <input type="email" maxlength="50" id="candidateEmail" formControlName="candidateEmail" class="form-control"
                         [ngClass]="{ 'is-invalid': submitted && f.candidateEmail.errors }" />
                     <div class="error-text" *ngIf="(f.candidateEmail.value.length !=0 && f.candidateEmail.errors)">Email
                         is required (enter a valid email)</div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-group">
                     <label for="candidateAddress">Address</label>
-                    <input type="text" id="candidateAddress" formControlName="candidateAddress" class="form-control"
+                    <input type="text" maxlength="100" id="candidateAddress" formControlName="candidateAddress" class="form-control"
                         [ngClass]="{ 'is-invalid': submitted && f.candidateAddress.errors }" />
                     <div class="error-text" *ngIf="(f.candidateAddress.value.length !=0 && f.candidateAddress.errors)">Address
                         is required</div>
@@ -39,25 +39,29 @@
                 <div class="form-group">
                     <label for="candidateHighestQualification">Highest Qualification</label>
                     <select id="candidateHighestQualification" formControlName="candidateHighestQualification" class="form-control"
-                        [ngClass]="{ 'is-invalid': submitted && registrationForm.controls.candidateHighestQualification.errors }">
-                        <option value="BTech">Btech</option>
-                        <option value="MTech">Mtech</option>
-                        <option value="MCA">MCA</option>
+                        [ngClass]="{'is-invalid': submitted && registrationForm.controls.candidateHighestQualification.errors }">
+                        <option *ngFor="let qualification of qualifications" value={{qualification.qualificationID}}>{{qualification.qualification}}</option>
                     </select>
+
                     <!-- <div *ngIf="submitted && registrationForm.controls.candidateHighestQualification.errors" class="invalid-feedback">
                         <div *ngIf="registrationForm.controls.candidateHighestQualification.required">Qualification is
                             required</div>
                     </div> -->
                 </div>
+                
+
 
                 <div class="form-group">
                     <label for="dob">Date Of Birth</label>
-                    <input type="date" id="dob" formControlName="candidateDateOfBirth" class="form-control" placeholder="Date Of Birth"
+
+                    <input id="dob" [minDate]="minDate" [maxDate]="today" formControlName="candidateDateOfBirth" class="form-control"
+                       type="text" bsDatepicker [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"
                         [ngClass]="{ 'is-invalid': submitted && registrationForm.controls.candidateDateOfBirth.errors }" />
                     <!-- <div *ngIf="submitted && registrationForm.controls.candidateDateOfBirth.errors" class="invalid-feedback">
                         <div *ngIf="registrationForm.controls.candidateDateOfBirth.errors.required">Date Of Birth is
                             required</div>
                     </div> -->
+
                 </div>
 
                 <div class="form-group">
@@ -73,10 +77,11 @@
                 </div>
                 <div class="form-group">
                     <label>Resume</label>
-                    <input type="file" class="form-control" (change)="onFileSelected($event)" />
-                    <!-- <div *ngIf="submitted && f.candidateHighestQualification.errors" class="invalid-feedback">
-                        <div *ngIf="f.candidateResume.errors.required">Resume is required</div>
-                    </div> -->
+                    <input type="file" class="form-control" formControlName="resume" (change)="onFileSelected($event)"
+                        accept=".doc, .docx,.pdf" [ngClass]="{ 'is-invalid': submitted && f.candidateResume.errors }" formenctype="multipart/form-data">
+                    <!-- <div *ngIf="submitted && f.candidateHighestQualification.errors" class="invalid-feedback"> -->
+                    <!-- <div *ngIf="f.candidateResume.errors.required" class="invalid-feedback">Resume is required</div> -->
+                    <!-- </div> -->
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary" *ngIf="registerForm.invalid" style="cursor:no-drop" [disabled]="registerForm.invalid">Register</button>

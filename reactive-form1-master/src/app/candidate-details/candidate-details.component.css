@@ -9,3 +9,9 @@ th,td{
     text-align: center;
     margin-top: 5%;
 }
+select{
+    width: 128px
+}
+.marks{
+    width: 128px;
+}

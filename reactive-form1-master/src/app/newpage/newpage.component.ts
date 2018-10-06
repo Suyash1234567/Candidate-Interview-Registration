@@ -29,7 +29,9 @@ export class NewpageComponent implements OnInit {
   }
 
   register(){
-    
+    this.dataService.postResume(this.dataService.getResume()).subscribe(res=>{
+      console.log(res);
+    });
     this.dataService.registerCandidate(this.data).subscribe(res=>{ 
       
       //console.log(res);  
@@ -40,7 +42,7 @@ export class NewpageComponent implements OnInit {
       {
       this.toastr.success("Candidate Registered Successfully", 'Candidate Register')
       this.router.navigate(['/']);
-      window.location.reload();
+      // window.location.reload();
       }
       if(err.error.text =="Email already exist") 
       {
@@ -48,6 +50,8 @@ export class NewpageComponent implements OnInit {
       this.router.navigate(['/']);
       }
     });
+
+    
     
     
   }

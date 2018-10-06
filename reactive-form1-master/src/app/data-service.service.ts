@@ -14,6 +14,7 @@ export class DataServiceService {
   candidateList=[];
   candidateName:string;
   employeeRole:any;
+  resume;
   httpOptions={
     headers : new HttpHeaders({'content-type':'application/json'})
   }
@@ -29,7 +30,8 @@ export class DataServiceService {
     "candidateHighestQualification": registrationDetails.candidateHighestQualification,
     "candidateContactNo": registrationDetails.candidateContactNo.toString(),
     "candidateResume": registrationDetails.candidateResume,
-    "candidateDateOfBirth": registrationDetails.candidateDateOfBirth
+    "candidateDateOfBirth": registrationDetails.candidateDateOfBirth,
+    
   } 
     return this.http.post('http://localhost:54770/api/Candidates',data,this.httpOptions);
   }
@@ -43,7 +45,7 @@ export class DataServiceService {
       "userName": userName,
       "userPassword": userPassword,
     }
-    return this.http.post('http://localhost:54770/api/auth/AllCandidate',data);
+    return this.http.post('http://localhost:54770/api/auth/GetAllCandidate',data);
   }
 
   authenticateUser(userName,userPassword):Observable<any>{
@@ -54,12 +56,16 @@ export class DataServiceService {
     return this.http.post('http://localhost:54770/api/auth/Employee',data);
   }
 
-  submitCandidate(EmployeeRole,EmployeeId,CandidateId):Observable<any>{
+  submitCandidate(EmployeeRole,EmployeeId,CandidateId,Marks,comments):Observable<any>{
     var data={  
       "EmployeeRole": EmployeeRole,
       "EmployeeId": EmployeeId,
-      "CandidateId": CandidateId
+      "CandidateId": CandidateId,
+      "marks": Marks,
+      "Comments":comments
+      
     }
+    console.log(data)
     return this.http.put('http://localhost:54770/api/InterviewDetails/'+CandidateId,data);
   }
 
@@ -117,5 +123,30 @@ export class DataServiceService {
   }
   getButtonStatus(){
     return this.isValid;
+  }
+  getMarks(candidateId):Observable<any>{
+    return this.http.get('http://localhost:54770/api/Auth/'+candidateId);
+  }
+
+  getQualifications():Observable<any>{
+    return this.http.get('http://localhost:54770/api/Qualifications');
+  }
+
+  postResume(resume):Observable<any>{
+    debugger;
+    var model={
+      "resume":resume
+    }
+    console.log(model.resume.+'MOdel');
+    return this.http.post('http://localhost:54770/api/candidates/PostResume',model);
+  }
+
+  getResume(){
+    return this.resume;
+  }
+
+  setResume(resume){
+
+    this.resume=resume;
   }
 }

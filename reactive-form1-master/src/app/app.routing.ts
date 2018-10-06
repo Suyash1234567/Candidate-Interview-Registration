@@ -9,7 +9,7 @@ import { CandidateDetailsComponent } from './candidate-details/candidate-details
 
 const routes: Routes = [
     { path: '', component: FirstComponent },
-    { path: 'newpage', component: NewpageComponent },
+    { path: 'Edit', component: NewpageComponent },
     { path: 'loginPage', component: LoginComponent },
     { path: 'details', component: DetailsComponent,canActivate : [AuthService] },
     { path: 'candidateDetails', component: CandidateDetailsComponent,canActivate:[AuthService] },

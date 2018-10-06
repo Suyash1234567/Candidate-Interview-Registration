@@ -25,6 +25,11 @@ export class FirstComponent implements OnInit {
   empidPAttern = "^[0-9]{4}$";
   data;
   isValid: boolean = false;
+  today = new Date();
+  minDate = new Date(1990, 5, 11);
+  qualifications = [];
+  resume;
+  // public Qualifications=[];
 
   constructor(private formBuilder: FormBuilder, private dataService: DataServiceService, private router: Router, private ServicefirstService: ServicefirstService, private toastr: ToastrService) {
 
@@ -32,24 +37,37 @@ export class FirstComponent implements OnInit {
       candidateName: ['', [Validators.required, Validators.pattern('^[A-Za-z][A-Za-z\\s]*$')]],
       candidateEmail: ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')]],
       candidateAddress: ['', [Validators.required, Validators.pattern('^[A-Za-z0-9][A-Za-z0-9,-\\s]+$')]],
-      candidateHighestQualification: ['', [Validators.required, Validators.pattern(this.namePattern)]],
-      candidateContactNo: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(16)]],
+      candidateHighestQualification: ['', [Validators.required]],
+      candidateContactNo: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       candidateResume: ['', [Validators.required]],
+      resume: ['', [Validators.required]],
       candidateDateOfBirth: ['', [Validators.required]],
-    });
+      UploadFile: ['']
+    })
     if (this.registerForm.value != null) {
       this.loadForm();
     }
   }
 
   ngOnInit() {
+    this.dataService.getQualifications().subscribe(res=>{
+      this.qualifications=res;
+    })
   }
 
   get f() { return this.registerForm.controls; }
+
   onFileSelected(event) {
     this.selectedFile = <File>event.target.files[0];
-    //console.log(this.selectedFile)
-    this.registerForm.controls.candidateResume.setValue(this.selectedFile.name)
+
+    console.log(this.selectedFile)
+    this.dataService.setResume(this.selectedFile);
+    this.registerForm.controls.candidateResume.setValue(this.selectedFile.name);
+    // this.registerForm.controls.resume.setValue(this.selectedFile);
+    console.log(this.registerForm.controls.resume);
+    // const fd = new FormData();
+    // fd.append('resume', this.selectedFile, this.selectedFile.name);
+    // this.registerForm.controls.UploadFile.setValue(fd);
   }
 
 
@@ -64,7 +82,6 @@ export class FirstComponent implements OnInit {
       this.registerForm.controls.candidateHighestQualification.setValue(this.data.candidateHighestQualification);
       this.registerForm.controls.candidateContactNo.setValue(this.data.candidateContactNo);
       this.registerForm.controls.candidateDateOfBirth.setValue(this.data.candidateDateOfBirth);
-      this.registerForm.controls.candidateResume.setValue(this.data.candidateResume);
     }
   }
 
@@ -76,11 +93,11 @@ export class FirstComponent implements OnInit {
       return;
     }
 
-    //console.log(this.registerForm.controls.candidateResume.value) 
+    console.log(this.registerForm.value)
 
     this.ServicefirstService.data = this.registerForm.value
     this.dataService.setButtonStatus(true);
-    this.router.navigate(['/newpage']);
+    this.router.navigate(['/Edit']);
 
   }
   // Host Listener for Input Check

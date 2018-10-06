@@ -1,4 +1,4 @@
-input.ng-invalid.ng-touched{       /* you can use ng-untouched if you want to display red always (i.e as long as no field is being filled) */
+input.ng-invalid.ng-touched,select.ng-invalid.ng-touched{       /* you can use ng-untouched if you want to display red always (i.e as long as no field is being filled) */
     border: 1px solid red;
 }
 .error-text{
