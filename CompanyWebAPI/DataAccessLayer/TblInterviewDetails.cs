@@ -10,6 +10,7 @@ namespace CompanyWebAPI.DataAccessLayer
         public int Itinterviewer { get; set; }
         public int Hrinterviewer { get; set; }
         public int Status { get; set; }
+        public string Comments { get; set; }
 
         public TblEmployee HrinterviewerNavigation { get; set; }
     }

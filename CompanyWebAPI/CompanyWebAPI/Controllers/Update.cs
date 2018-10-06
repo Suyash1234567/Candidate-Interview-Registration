@@ -1,7 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CompanyWebAPI.Controllers
 {
@@ -10,5 +8,7 @@ namespace CompanyWebAPI.Controllers
         public string EmployeeRole { get; set; }
         public int EmployeeId { get; set; }
         public int CandidateId { get; set; }
+        public string Comments { set; get; }
+        public List<Mark> Marks { get; set; }
     }
 }

@@ -1,12 +1,11 @@
-﻿ using System;
+﻿using CompanyWebAPI.DataAccessLayer;
+using DataAccessLayer;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using CompanyWebAPI.DataAccessLayer;
-using Microsoft.AspNetCore.Cors;
 
 namespace CompanyWebAPI.Controllers
 {
@@ -24,14 +23,14 @@ namespace CompanyWebAPI.Controllers
 
         // GET: api/InterviewDetails
         [HttpGet]
-        public IEnumerable<TblInterviewDetails> GetTblInterviewDetails()
+        public IEnumerable<TblInterviewDetails> GetInterviewDetails()
         {
             return _context.TblInterviewDetails;
         }
 
         // GET: api/InterviewDetails/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetTblInterviewDetails([FromRoute] int id)
+        public async Task<IActionResult> GetInterviewDetails([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
@@ -50,7 +49,7 @@ namespace CompanyWebAPI.Controllers
 
         // PUT: api/InterviewDetails/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblInterviewDetails([FromRoute] int id, [FromBody] Update details)
+        public async Task<IActionResult> PutInterviewDetails([FromRoute] int id, [FromBody] Update details)
         {
             if (!ModelState.IsValid)
             {
@@ -67,14 +66,23 @@ namespace CompanyWebAPI.Controllers
             {
                 tblInterviewDetails.Hrinterviewer = details.EmployeeId;
                 tblInterviewDetails.Status = tblInterviewDetails.Status + 1;
+                tblInterviewDetails.Comments = details.Comments;
             }
             if (details.EmployeeRole == "IT" || details.EmployeeRole == "it")
             {
                 tblInterviewDetails.Itinterviewer = details.EmployeeId;
                 tblInterviewDetails.Status = tblInterviewDetails.Status + 1;
+                foreach (Mark mark in details.Marks)
+                {
+                    _context.TblSkills.Add(new TblSkills
+                    {
+                        CandidateId = details.CandidateId,
+                        CourseId = mark.CourseID,
+                        Marks = mark.Marks
+                    });
+                }
             }
             _context.Entry(tblInterviewDetails).State = EntityState.Modified;
-
 
             try
             {
@@ -97,7 +105,7 @@ namespace CompanyWebAPI.Controllers
 
         // POST: api/InterviewDetails
         [HttpPost]
-        public async Task<IActionResult> PostTblInterviewDetails([FromBody] TblInterviewDetails tblInterviewDetails)
+        public async Task<IActionResult> PostInterviewDetails([FromBody] TblInterviewDetails tblInterviewDetails)
         {
             if (!ModelState.IsValid)
             {
@@ -112,7 +120,7 @@ namespace CompanyWebAPI.Controllers
 
         // DELETE: api/InterviewDetails/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTblInterviewDetails([FromRoute] int id)
+        public async Task<IActionResult> DeleteInterviewDetails([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {

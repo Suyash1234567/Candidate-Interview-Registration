@@ -1,12 +1,10 @@
-﻿using System;
+﻿using CompanyWebAPI.DataAccessLayer;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using CompanyWebAPI.DataAccessLayer;
-using Microsoft.AspNetCore.Cors;
 
 namespace CompanyWebAPI.Controllers
 {
@@ -24,14 +22,14 @@ namespace CompanyWebAPI.Controllers
 
         // GET: api/Employees
         [HttpGet]
-        public IEnumerable<TblEmployee> GetTblEmployee()
+        public IEnumerable<TblEmployee> GetEmployee()
         {
             return _context.TblEmployee;
         }
 
         // GET: api/Employees/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetTblEmployee([FromRoute] int id)
+        public async Task<IActionResult> GetEmployee([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
@@ -50,7 +48,7 @@ namespace CompanyWebAPI.Controllers
 
         // PUT: api/Employees/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblEmployee([FromRoute] int id, [FromBody] TblEmployee tblEmployee)
+        public async Task<IActionResult> PutEmployee([FromRoute] int id, [FromBody] TblEmployee tblEmployee)
         {
             if (!ModelState.IsValid)
             {
@@ -85,7 +83,7 @@ namespace CompanyWebAPI.Controllers
 
         // POST: api/Employees
         [HttpPost]
-        public async Task<IActionResult> PostTblEmployee([FromBody] TblEmployee tblEmployee)
+        public async Task<IActionResult> PostEmployee([FromBody] TblEmployee tblEmployee)
         {
             if (!ModelState.IsValid)
             {
@@ -100,7 +98,7 @@ namespace CompanyWebAPI.Controllers
 
         // DELETE: api/Employees/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTblEmployee([FromRoute] int id)
+        public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {

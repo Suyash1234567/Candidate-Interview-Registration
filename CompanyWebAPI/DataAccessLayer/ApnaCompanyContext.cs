@@ -1,4 +1,5 @@
 ﻿using System;
+using DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -6,13 +7,12 @@ namespace CompanyWebAPI.DataAccessLayer
 {
     public partial class ApnaCompanyContext : DbContext
     {
-        
-
-        
-
         public virtual DbSet<TblCandidate> TblCandidate { get; set; }
         public virtual DbSet<TblEmployee> TblEmployee { get; set; }
         public virtual DbSet<TblInterviewDetails> TblInterviewDetails { get; set; }
+        public virtual DbSet<TblSkills> TblSkills { get; set; }
+        public virtual DbSet<TblCourses> TbCourses { get; set; }
+        public virtual DbSet<TblQualification> TblQualifications { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -113,6 +113,24 @@ namespace CompanyWebAPI.DataAccessLayer
                     .HasForeignKey(d => d.Hrinterviewer)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_tblInterviewDetails_tblEmployee");
+            });
+            modelBuilder.Entity<TblSkills>(entity =>
+            {
+                entity.HasKey(e => e.SkillId);
+
+                entity.ToTable("tblSKills");
+            });
+            modelBuilder.Entity<TblCourses>(entity =>
+            {
+                entity.HasKey(e => e.CourseId);
+
+                entity.ToTable("tblCourses");
+            });
+            modelBuilder.Entity<TblQualification>(entity =>
+            {
+                entity.HasKey(e => e.QualificationID);
+
+                entity.ToTable("tblQualification");
             });
         }
     }
